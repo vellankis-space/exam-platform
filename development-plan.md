@@ -17,20 +17,20 @@
     *   [x] Implement database models using SQLAlchemy.
 
 ### **Phase 2: Core Backend Development (Day 1-2)**
-*   [ ] **Authentication System**
-    *   [ ] Implement user registration endpoint with password hashing.
-    *   [ ] Implement login endpoint to generate JWT tokens.
-    *   [ ] Create authentication middleware for protected routes.
-*   [ ] **Exam Management System**
-    *   [ ] Create an endpoint to fetch randomized exam questions.
-    *   [ ] Implement answer submission and validation logic.
-    *   [ ] Implement real-time answer saving.
-*   [ ] **Scoring and Results System**
-    *   [ ] Create an endpoint for exam submission.
-    *   [ ] Implement the score calculation logic.
-    *   [ ] Generate detailed results with a question breakdown.
-*   [ ] **Code Documentation**
-    *   [ ] Add comments to all backend files to explain the logic.
+*   [x] **Authentication System**
+    *   [x] Implement user registration endpoint with password hashing.
+    *   [x] Implement login endpoint to generate JWT tokens.
+    *   [x] Create authentication middleware for protected routes.
+*   [x] **Exam Management System**
+    *   [x] Create an endpoint to fetch randomized exam questions.
+    *   [x] Implement answer submission and validation logic.
+    *   [x] Implement real-time answer saving.
+*   [x] **Scoring and Results System**
+    *   [x] Create an endpoint for exam submission.
+    *   [x] Implement the score calculation logic.
+    *   [x] Generate detailed results with a question breakdown.
+*   [x] **Code Documentation**
+    *   [x] Add comments to all backend files to explain the logic.
 
 ### **Phase 3: Frontend Foundation & UI Development (Day 2)**
 *   [ ] **React Application Setup**
