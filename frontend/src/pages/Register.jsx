@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import AuthContext from '../context/AuthContext';
+import { Container, Form, Input, Button, Error } from '../components/common/StyledComponents';
 
 const Register = () => {
   const [email, setEmail] = useState('');
@@ -22,40 +23,40 @@ const Register = () => {
   };
 
   return (
-    <div>
+    <Container>
       <h2>Register</h2>
-      {error && <p>{error}</p>}
-      <form onSubmit={handleSubmit}>
-        <input
+      {error && <Error>{error}</Error>}
+      <Form onSubmit={handleSubmit}>
+        <Input
           type="email"
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
         />
-        <input
+        <Input
           type="password"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <input
+        <Input
           type="text"
           placeholder="Full Name"
           value={fullName}
           onChange={(e) => setFullName(e.target.value)}
           required
         />
-        <input
+        <Input
           type="text"
           placeholder="Student ID (Optional)"
           value={studentId}
           onChange={(e) => setStudentId(e.target.value)}
         />
-        <button type="submit">Register</button>
-      </form>
-    </div>
+        <Button type="submit">Register</Button>
+      </Form>
+    </Container>
   );
 };
 
