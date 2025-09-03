@@ -1,6 +1,6 @@
 ### **Phase 1: Project Foundation & Setup (Day 1)**
 *   [x] **Project Initialization & Git Repository Setup**
-    *   [ ] Create a new GitHub repository.
+    *   [x] Create a new GitHub repository.
     *   [x] Initialize a project structure with separate `frontend` and `backend` directories.
     *   [x] Create a root `README.md` file.
 *   [x] **Backend Setup (Python/FastAPI)**
@@ -12,7 +12,7 @@
     *   [x] Install `axios`, `react-router-dom`, and a styling library (e.g., Styled Components).
     *   [x] Set up basic routing.
 *   [x] **Database Setup (PostgreSQL)**
-    *   [ ] Create a new PostgreSQL database.
+    *   [x] Create a new PostgreSQL database.
     *   [x] Design the database schema for `users`, `questions`, `exam_sessions`, and `user_answers`.
     *   [x] Implement database models using SQLAlchemy.
 
@@ -52,28 +52,28 @@
     *   [x] Add comments to all new frontend components and services.
 
 ### **Phase 4: Core Exam Interface Development (Day 3)**
-*   [ ] **Timer Implementation**
-    *   [ ] Implement the countdown timer hook.
-    *   [ ] Add visual warning indicators.
-    *   [ ] Set up automatic submission at timeout.
-    *   [ ] Implement server time synchronization.
-*   [ ] **Question Display and Navigation**
-    *   [ ] Create the question display component.
-    *   [ ] Implement answer selection functionality.
-    *   [ ] Build navigation controls (Next/Previous).
-    *   [ ] Add progress tracking and a question overview.
-*   [ ] **Auto-Save and Answer Management**
-    *   [ ] Set up automatic answer saving.
-    *   [ ] Implement answer persistence and recovery.
-    *   [ ] Handle network interruption scenarios.
-    *   [ ] Create answer state synchronization.
-*   [ ] **Question Navigator and Progress Tracking**
-    *   [ ] Build the question navigator component.
-    *   [ ] Implement progress visualization.
-    *   [ ] Add question status indicators.
-    *   [ ] Create a mobile-friendly navigation overlay.
-*   [ ] **Code Documentation**
-    *   [ ] Add comments to all new frontend components and hooks.
+*   [x] **Timer Implementation**
+    *   [x] Implement the countdown timer hook.
+    *   [x] Add visual warning indicators.
+    *   [x] Set up automatic submission at timeout.
+    *   [x] Implement server time synchronization.
+*   [x] **Question Display and Navigation**
+    *   [x] Create the question display component.
+    *   [x] Implement answer selection functionality.
+    *   [x] Build navigation controls (Next/Previous).
+    *   [x] Add progress tracking and a question overview.
+*   [x] **Auto-Save and Answer Management**
+    *   [x] Set up automatic answer saving.
+    *   [x] Implement answer persistence and recovery.
+    *   [x] Handle network interruption scenarios.
+    *   [x] Create answer state synchronization.
+*   [x] **Question Navigator and Progress Tracking**
+    *   [x] Build the question navigator component.
+    *   [x] Implement progress visualization.
+    *   [x] Add question status indicators.
+    *   [x] Create a mobile-friendly navigation overlay.
+*   [x] **Code Documentation**
+    *   [x] Add comments to all new frontend components and hooks.
 
 ### **Phase 5: Submission and Results (Day 4)**
 *   [ ] **Exam Review and Submission**

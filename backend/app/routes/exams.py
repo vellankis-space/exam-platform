@@ -1,5 +1,3 @@
-# backend/app/routes/exams.py
-
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from .. import schemas
@@ -90,6 +88,29 @@ def submit_exam(submit_request: schemas.SubmitRequest, db: Session = Depends(get
     db.commit()
 
     return {"message": "Exam submitted successfully", "score": score}
+
+@router.post("/{exam_id}/answer")
+def save_answer(exam_id: int, answer: schemas.Answer, db: Session = Depends(get_db), current_user: schemas.UserResponse = Depends(get_current_user)):
+    exam_session = db.query(ExamSession).filter(ExamSession.id == exam_id, ExamSession.user_id == current_user.id).first()
+    if not exam_session:
+        raise HTTPException(status_code=404, detail="Exam session not found")
+
+    if exam_session.status != 'active':
+        raise HTTPException(status_code=400, detail="Exam session is not active")
+
+    user_answer = db.query(UserAnswer).filter(UserAnswer.session_id == exam_id, UserAnswer.question_id == answer.question_id).first()
+    if user_answer:
+        user_answer.user_answer = answer.answer
+    else:
+        user_answer = UserAnswer(
+            session_id=exam_id,
+            question_id=answer.question_id,
+            user_answer=answer.answer
+        )
+        db.add(user_answer)
+    
+    db.commit()
+    return {"message": "Answer saved successfully"}
 
 @router.get("/{exam_id}/results", response_model=schemas.ResultsResponse)
 def get_results(exam_id: int, db: Session = Depends(get_db), current_user: schemas.UserResponse = Depends(get_current_user)):
